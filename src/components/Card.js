@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Card = ({ data, index }) => {
+const Card = ({ data }) => {
   return (
-    <Link to={`/article/${index}`} className="card-a">
+    <Link to={`/article/${data.article}`} className="card-a">
       <div className="card">
         <h1 className="heading-card">{data.title}</h1>
         <div className="image-container">

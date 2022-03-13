@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: black;
@@ -64,6 +65,8 @@ body {
   display: block;
   border-bottom: 2px solid gray;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 .mobile-ul a {
   text-decoration-line: none;
