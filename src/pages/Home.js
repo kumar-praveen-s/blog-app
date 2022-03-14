@@ -22,7 +22,7 @@ const Home = () => {
       <div className="third-container">
         <div className="third-first-children">
           <FlexComponentColumn data={Tech} />
-          <Link to="/articles/1" className="card-a">
+          <Link to="/article/1" className="card-a">
             <div className="img-class">
               <img
                 src={Travel[0].image}
