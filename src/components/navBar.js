@@ -34,23 +34,23 @@ const NavBar = () => {
       {view && (
         <ul className="mobile-ul">
           <Link to="/">
-            <li className="mobile-li">
-              <button onClick={handleClick}>Home</button>
+            <li className="mobile-li" onClick={handleClick}>
+              Home
             </li>
           </Link>
           <Link to="/tech">
-            <li className="mobile-li">
-              <button onClick={handleClick}>Technology</button>
+            <li className="mobile-li" onClick={handleClick}>
+              Technology
             </li>
           </Link>
           <Link to="/sports">
-            <li className="mobile-li">
-              <button onClick={handleClick}>Sports</button>
+            <li className="mobile-li" onClick={handleClick}>
+              Sports
             </li>
           </Link>
           <Link to="/travel">
-            <li className="mobile-li">
-              <button onClick={handleClick}>Travel</button>
+            <li className="mobile-li" onClick={handleClick}>
+              Travel
             </li>
           </Link>
         </ul>

@@ -57,8 +57,9 @@ body {
   font-size: 1.3rem;
   position: sticky;
   top: 8vh;
-  /* background-color: blue; */
+  background-color: black;
   color: white;
+  z-index: 1;
 }
 .mobile-li {
   height: 30px;
