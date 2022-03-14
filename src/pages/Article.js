@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { Travel, Tech, sports } from "../Data/BlogData";
 import "../styling/article.css";
 
@@ -13,17 +13,15 @@ const Article = () => {
   } else if (id >= 13 && id <= 18) {
     data = sports[id - 13];
   }
-  const navigate = useNavigate();
-  const handlePage = () => {
-    navigate("/");
-  };
+
   return (
     <>
-      <button className="icon" onClick={handlePage}>
+      <br />
+      <Link to="/" className="icon">
         <i className="fa fa-arrow-left" aria-hidden="true">
           Go Back
         </i>
-      </button>
+      </Link>
       <div className="article-page-container">
         <div className="article-container">
           <h1 className="article-heading">{data.title}</h1>

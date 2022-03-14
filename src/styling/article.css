@@ -14,14 +14,10 @@
   gap: 20px;
 }
 .icon {
-  margin: 20px 30%;
+  margin: 50px 30%;
   background-color: black;
   border: 0;
   font-size: 20px;
-}
-.icon:hover {
-  font-size: 18px;
-  cursor: grab;
 }
 
 .article-heading {
