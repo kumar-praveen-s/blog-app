@@ -16,7 +16,7 @@ const Sports = () => {
         <Card4 data={sports[4]} />
         <Card4 data={sports[5]} />
         <Card4 data={sports[0]} />
-        <Card4 data={sports[1]} />
+        <Card4 data={sports[2]} />
       </div>
       <div className="page-second-container">
         <h1>Top posts</h1>
