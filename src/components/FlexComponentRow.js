@@ -3,12 +3,12 @@ import Card from "./Card";
 
 const FlexComponentRow = (props) => {
   console.log(props.data);
-  const travel = props.data;
+
   return (
     <div className="third">
-      <Card data={travel[0]} />
-      <Card data={travel[1]} />
-      <Card data={travel[2]} />
+      <Card data={props.data[0]} />
+      <Card data={props.data[1]} />
+      <Card data={props.data[2]} />
     </div>
   );
 };

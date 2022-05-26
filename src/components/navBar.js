@@ -18,11 +18,11 @@ const NavBar = () => {
           <Link to="/tech">
             <li>Technology</li>
           </Link>
-          <Link to="/sports">
-            <li>Sports</li>
+          <Link to="/tours">
+            <li>Tourism</li>
           </Link>
-          <Link to="/travel">
-            <li>Travel</li>
+          <Link to="/fitness">
+            <li>Fitness</li>
           </Link>
         </ul>
         <div className="mobile">
@@ -43,14 +43,14 @@ const NavBar = () => {
               Technology
             </li>
           </Link>
-          <Link to="/sports">
+          <Link to="/tours">
             <li className="mobile-li" onClick={handleClick}>
-              Sports
+              Tourism
             </li>
           </Link>
-          <Link to="/travel">
+          <Link to="/fitness">
             <li className="mobile-li" onClick={handleClick}>
-              Travel
+              Fitness
             </li>
           </Link>
         </ul>

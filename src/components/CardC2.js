@@ -6,13 +6,13 @@ const CardC2 = (props) => {
   return (
     <Link to={`/article/${data.id}`} className="card-a">
       <div className="cardc2-container">
-        <img src={data.image} alt={data.altText} className="cardc2-img" />
+        <img src={data.image} alt={data.title} className="cardc2-img" />
         <div className="cardc2-heading">
           <h1>{data.title}</h1>
           <h2>{data.id}</h2>
         </div>
-        <p className="cardc2-des">{data.Des}</p>
-        <h6 className="cardc2-category">{`${data.category} / ${data.date}`}</h6>
+        <p className="cardc2-des">{data.description}</p>
+        <h6 className="cardc2-category">{`${data.category} / ${data.Date}`}</h6>
       </div>
     </Link>
   );

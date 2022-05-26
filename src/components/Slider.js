@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import DataSlider from "../Data/Slider";
 import "../styling/Slider.css";
 import BtnSlider from "./BtnSlider";
 
-const Slider = () => {
+const Slider = ({data}) => {
   const [Index, setIndex] = useState(1);
   const [I, setI] = useState(1);
+  const DataSlider=data;
   const nextSlide = () => {
     if (Index !== DataSlider.length) {
       setIndex(Index + 1);
@@ -33,14 +33,14 @@ const Slider = () => {
 
   return (
     <div className="container-slider">
-      <Link to={`/${DataSlider[Index - 1].pageName}`}>
+      <Link to={`/article/${DataSlider[Index-1].id}`}>
         <div
           onClick={() => console.log(DataSlider[Index - 1].id)}
           key={DataSlider[Index - 1].id}
           className={Index === I ? "slide active-anim" : "slide"}
         >
           <img
-            src={require(`../Assets/Slider-data/image${Index}.jpg`)}
+            src={DataSlider[Index-1].image}
             alt="slider"
           />
           <h1 className="heading-slider">{DataSlider[Index - 1].title}</h1>
